@@ -1,3 +1,4 @@
+import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
 
 export default function Header() {
@@ -36,10 +37,10 @@ export default function Header() {
                 Contact
               </a>
             </Button>
+            {/* Themetoggle */}
+            <ModeToggle />
           </div>
         </nav>
-
-        {/* Themetoggle */}
       </div>
     </header>
   );
