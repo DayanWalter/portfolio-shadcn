@@ -1,11 +1,10 @@
-import { Button } from "./components/ui/button";
+import Header from "./components/header";
 
 function App() {
   return (
-    <>
-      <h1 className=" text-3xl font-bold underline">Hello world!</h1>
-      <Button>Click Me!</Button>
-    </>
+    <div className="">
+      <Header />
+    </div>
   );
 }
 
