@@ -72,7 +72,7 @@ export default function Projects() {
         </div>
 
         {/* Container */}
-        <div className="px-4 md:max-w-7xl md:px-8">
+        <div className="border-l px-4 md:max-w-7xl md:px-8">
           {/* Content */}
           <ul className="grid gap-12 md:gap-16">
             {projects.map((project) => (
