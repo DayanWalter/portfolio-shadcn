@@ -129,7 +129,7 @@ export default function Skills() {
 
           {/* Content */}
           <div className="">
-            <div className="grid gap-12 md:gap-16">
+            <div className="grid gap-16 md:gap-20">
               {/* FRONTEND  */}
               <section className="grid gap-5 ">
                 <p className="border-b text-center text-xl md:text-left">
