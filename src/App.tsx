@@ -5,6 +5,7 @@ import Projects from "./components/project-section";
 import Skills from "./components/skills-section";
 import Contact from "./components/contact-section";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "./components/footer";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Projects />
         <Skills />
         <Contact />
+        <Footer />
         <Toaster />
       </ThemeProvider>
     </>
