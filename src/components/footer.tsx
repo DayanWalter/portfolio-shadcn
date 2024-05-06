@@ -8,8 +8,8 @@ export default function Footer() {
           className=""
         >
           {" "}
-          Except where otherwise noted, content on this site is licensed under a
-          MIT license
+          &copy; 2024 Dayan Walter - This project is licensed under the MIT
+          License.
         </a>
       </p>
     </footer>
