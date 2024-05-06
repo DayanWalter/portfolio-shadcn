@@ -10,7 +10,7 @@ export default function Contact() {
         className="grid justify-center gap-12 py-16 md:gap-16 md:py-24"
       >
         {/* Container */}
-        <div className="grid gap-8 border-l  px-4 md:max-w-7xl md:px-8 ">
+        <div className="grid gap-8 border-l  px-4 md:max-w-xl md:px-8 ">
           {/* Content */}
           <div className=" ">
             {/* Heading */}

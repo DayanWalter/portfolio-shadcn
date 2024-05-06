@@ -1,5 +1,3 @@
-import SkillItem from "./skill-item";
-
 export default function Skills() {
   // Svgs from https://icon-sets.iconify.design/devicon/
   const frontendSkills = [
@@ -139,7 +137,19 @@ export default function Skills() {
                   {frontendSkills.map((skill) => {
                     return (
                       <li key={skill.id}>
-                        <SkillItem skill={skill} />
+                        <a
+                          className="flex flex-col items-center gap-2  hover:cursor-pointer"
+                          href={skill.website}
+                          target="_blank"
+                          aria-label={"Link to " + skill.name + " docs"}
+                        >
+                          <img
+                            className="h-10 w-10 hover:scale-110"
+                            src={skill.svg}
+                            alt={skill.name + " image"}
+                          />
+                          <span className="">{skill.name}</span>
+                        </a>
                       </li>
                     );
                   })}
@@ -154,7 +164,19 @@ export default function Skills() {
                   {backendSkills.map((skill) => {
                     return (
                       <li key={skill.id}>
-                        <SkillItem skill={skill} />
+                        <a
+                          className="flex flex-col items-center gap-2  hover:cursor-pointer"
+                          href={skill.website}
+                          target="_blank"
+                          aria-label={"Link to " + skill.name + " docs"}
+                        >
+                          <img
+                            className="h-10 w-10 hover:scale-110"
+                            src={skill.svg}
+                            alt={skill.name + " image"}
+                          />
+                          <span className="">{skill.name}</span>
+                        </a>
                       </li>
                     );
                   })}
@@ -169,7 +191,19 @@ export default function Skills() {
                   {toolSkills.map((skill) => {
                     return (
                       <li key={skill.id}>
-                        <SkillItem skill={skill} />
+                        <a
+                          className="flex flex-col items-center gap-2  hover:cursor-pointer"
+                          href={skill.website}
+                          target="_blank"
+                          aria-label={"Link to " + skill.name + " docs"}
+                        >
+                          <img
+                            className="h-10 w-10 hover:scale-110"
+                            src={skill.svg}
+                            alt={skill.name + " image"}
+                          />
+                          <span className="">{skill.name}</span>
+                        </a>
                       </li>
                     );
                   })}
