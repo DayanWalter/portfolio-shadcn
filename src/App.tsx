@@ -2,6 +2,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "./components/header";
 import Intro from "./components/intro-section";
 import Projects from "./components/project-section";
+import Skills from "./components/skills-section";
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
         <Header />
         <Intro />
         <Projects />
+        <Skills />
       </ThemeProvider>
     </>
   );
