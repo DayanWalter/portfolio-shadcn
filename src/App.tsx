@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/header";
 import Intro from "./components/intro-section";
 import Projects from "./components/project-section";
@@ -19,6 +20,7 @@ function App() {
         <Footer />
         <Toaster />
       </ThemeProvider>
+      <Analytics />
     </>
   );
 }
