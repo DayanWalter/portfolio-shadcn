@@ -18,22 +18,22 @@ export default function Header() {
         <nav id="mainmenu" role="navigation" className="w-full md:w-3/4 ">
           <div role="menubar" className="flex justify-between text-primary">
             <Button variant="link">
-              <a href="#" role="link">
+              <a href="#" role="menuitem">
                 Home
               </a>
             </Button>
             <Button variant="link">
-              <a href="#projects" role="link">
+              <a href="#projects" role="menuitem">
                 Projects
               </a>
             </Button>
             <Button variant="link">
-              <a href="#skills" role="link">
+              <a href="#skills" role="menuitem">
                 Skills
               </a>
             </Button>
             <Button variant="link">
-              <a href="#contact" role="link">
+              <a href="#contact" role="menuitem">
                 Contact
               </a>
             </Button>
