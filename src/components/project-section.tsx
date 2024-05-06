@@ -76,53 +76,51 @@ export default function Projects() {
           {/* Content */}
           <ul className="grid gap-12 md:gap-16">
             {projects.map((project) => (
-              <>
-                <li
-                  key={project.id}
-                  className="flex flex-col gap-5 md:flex-row md:gap-10"
-                >
-                  <a className="" target="_blank" href={project.websiteLink}>
-                    <img
-                      src={project.image}
-                      className=" rounded-md border shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:max-w-lg "
-                    />
-                  </a>
-                  {/* Heading and text */}
-                  <div className="flex flex-col gap-5">
-                    {/* Heading and tech */}
-                    <div className="">
-                      <a href={project.websiteLink}>
-                        <p className="text-xl font-semibold">{project.title}</p>
-                      </a>
+              <li
+                key={project.id}
+                className="flex flex-col gap-5 md:flex-row md:gap-10"
+              >
+                <a className="" target="_blank" href={project.websiteLink}>
+                  <img
+                    src={project.image}
+                    className=" rounded-md border shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:max-w-lg "
+                  />
+                </a>
+                {/* Heading and text */}
+                <div className="flex flex-col gap-5">
+                  {/* Heading and tech */}
+                  <div className="">
+                    <a href={project.websiteLink}>
+                      <p className="text-xl font-semibold">{project.title}</p>
+                    </a>
 
-                      {/* Tech */}
-                      <p className="text-sm italic">{project.tech}</p>
-                    </div>
-
-                    {/* Description */}
-                    <p className="">{project.descriptionEN}</p>
-
-                    {/* Links */}
-                    <div className="flex gap-5">
-                      <Button size="sm">
-                        <a
-                          href={project.codeLink}
-                          aria-label="View code for ..."
-                          target="_blank"
-                        >
-                          View Code
-                        </a>
-                      </Button>
-                      <Button size="sm">
-                        <a href={project.websiteLink} target="_blank">
-                          Visit website
-                        </a>
-                      </Button>
-                    </div>
+                    {/* Tech */}
+                    <p className="text-sm italic">{project.tech}</p>
                   </div>
-                </li>
+
+                  {/* Description */}
+                  <p className="">{project.descriptionEN}</p>
+
+                  {/* Links */}
+                  <div className="flex gap-5">
+                    <Button size="sm">
+                      <a
+                        href={project.codeLink}
+                        aria-label="View code for ..."
+                        target="_blank"
+                      >
+                        View Code
+                      </a>
+                    </Button>
+                    <Button size="sm">
+                      <a href={project.websiteLink} target="_blank">
+                        Visit website
+                      </a>
+                    </Button>
+                  </div>
+                </div>
                 <hr />
-              </>
+              </li>
             ))}
           </ul>
         </div>

@@ -1,3 +1,4 @@
+import emailjs from "@emailjs/browser";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -15,6 +16,12 @@ import {
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 
+interface FormValues extends Record<string, string> {
+  user_name: string;
+  user_email: string;
+  user_message: string;
+}
+
 export default function ContactForm() {
   const { toast } = useToast();
 
@@ -31,21 +38,37 @@ export default function ContactForm() {
       user_message: "",
     },
   });
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-    toast({
-      title: "Message sent",
-      description:
-        "Thank you! I will reach out to you within the next 24 hours.",
-    });
-  }
+
+  const sendEmail = (values: FormValues) => {
+    emailjs
+      .send("service_2n1b8f9", "template_dxv4he7", values, {
+        publicKey: "N21MnRLlPBPVc0mQf",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          form.reset();
+          toast({
+            title: "Message sent",
+            description:
+              "Thank you! I will reach out to you within the next 24 hours.",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast({
+            title: "Message sending failed",
+            description:
+              "Sorry, an error occurred while sending your message. Please try again later.",
+          });
+        },
+      );
+  };
 
   return (
     <>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="grid  gap-4">
+        <form onSubmit={form.handleSubmit(sendEmail)} className="grid  gap-4">
           {/* formfield name*/}
           <FormField
             control={form.control}
