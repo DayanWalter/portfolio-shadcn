@@ -15,6 +15,8 @@ import {
 } from "@/components/ui/form";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
+import { Loader2 } from "lucide-react";
 
 interface FormValues extends Record<string, string> {
   user_name: string;
@@ -24,6 +26,7 @@ interface FormValues extends Record<string, string> {
 
 export default function ContactForm() {
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
 
   const formSchema = z.object({
     user_name: z.string().min(5).max(50),
@@ -40,6 +43,7 @@ export default function ContactForm() {
   });
 
   const sendEmail = (values: FormValues) => {
+    setLoading(true);
     emailjs
       .send("service_2n1b8f9", "template_dxv4he7", values, {
         publicKey: "N21MnRLlPBPVc0mQf",
@@ -53,6 +57,7 @@ export default function ContactForm() {
             description:
               "Thank you! I will reach out to you within the next 24 hours.",
           });
+          setLoading(false);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -61,6 +66,7 @@ export default function ContactForm() {
             description:
               "Sorry, an error occurred while sending your message. Please try again later.",
           });
+          setLoading(false);
         },
       );
   };
@@ -119,9 +125,16 @@ export default function ContactForm() {
           />
 
           {/* submit button */}
-          <Button type="submit" className="w-full">
-            Send Message
-          </Button>
+          {loading ? (
+            <Button disabled>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Please wait
+            </Button>
+          ) : (
+            <Button type="submit" className="w-full">
+              <p>Send Message</p>
+            </Button>
+          )}
         </form>
       </Form>
     </>
