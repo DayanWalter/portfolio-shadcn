@@ -7,9 +7,9 @@ export default function Contact() {
       {/* Section */}
       <section id="contact" className="grid justify-center py-20 md:py-24">
         {/* Container */}
-        <div className="grid gap-12 border-l px-4 md:max-w-xl md:gap-16 md:px-8">
+        <div className="grid gap-16 border-l px-4 md:max-w-xl md:gap-20 md:px-8">
           {/* Content */}
-          <div className="md:max-w-xl">
+          <div className="grid gap-1 md:max-w-xl md:gap-2">
             {/* Heading */}
             <h2 className="text-3xl font-semibold md:text-4xl">Contact Me</h2>
             <p className="">

@@ -58,22 +58,22 @@ export default function Projects() {
       {/* Section */}
       <section id="projects" className="grid justify-center py-20 md:py-24">
         {/* Container */}
-        <div className="grid gap-12 border-l px-4 md:max-w-7xl md:gap-16 md:px-8">
+        <div className="grid gap-16 border-l px-4 md:max-w-7xl md:gap-20 md:px-8">
           {/* Content */}
           <div>
             {/* Heading */}
-            <div className="">
+            <div className="grid gap-1 md:gap-2">
               <h2 className=" text-3xl font-semibold md:text-4xl">Projects</h2>
               <p className="">These are my newest projects</p>
             </div>
           </div>
 
           {/* Content */}
-          <ul className="grid gap-12 md:gap-16">
+          <ul className="grid gap-20">
             {projects.map((project) => (
               <li
                 key={project.id}
-                className="flex flex-col gap-5 md:flex-row md:gap-10"
+                className="flex flex-col gap-5  md:flex-row md:gap-10"
               >
                 <a className="" target="_blank" href={project.websiteLink}>
                   <img
@@ -114,7 +114,6 @@ export default function Projects() {
                     </Button>
                   </div>
                 </div>
-                <hr />
               </li>
             ))}
           </ul>
