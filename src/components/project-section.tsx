@@ -56,23 +56,18 @@ export default function Projects() {
   return (
     <>
       {/* Section */}
-      <section
-        id="projects"
-        className="grid justify-center gap-12 py-16 md:gap-16 md:py-24"
-      >
+      <section id="projects" className="grid justify-center py-20 md:py-24">
         {/* Container */}
-        <div className=" px-4 md:max-w-7xl md:px-8">
+        <div className="grid gap-12 border-l px-4 md:max-w-7xl md:gap-16 md:px-8">
           {/* Content */}
           <div>
             {/* Heading */}
-            <div className="grid gap-4 md:gap-5">
+            <div className="">
               <h2 className=" text-3xl font-semibold md:text-4xl">Projects</h2>
+              <p className="">These are my newest projects</p>
             </div>
           </div>
-        </div>
 
-        {/* Container */}
-        <div className="border-l px-4 md:max-w-7xl md:px-8">
           {/* Content */}
           <ul className="grid gap-12 md:gap-16">
             {projects.map((project) => (

@@ -106,21 +106,17 @@ export default function Skills() {
   return (
     <>
       {/* Section */}
-      <section
-        id="skills"
-        className="grid justify-center gap-12 py-16 md:gap-16 md:py-24"
-      >
+      <section id="skills" className="grid justify-center py-20 md:py-24">
         {/* Container */}
-        <div className="grid gap-8 border-l px-4 md:max-w-7xl md:px-8">
+        <div className="grid gap-12  border-l px-4 md:max-w-7xl md:gap-16 md:px-8">
           {/* Content */}
           <div className=" ">
             {/* Heading */}
             <div className=" ">
               <h2 className="text-3xl font-semibold md:text-4xl">Skills</h2>
-
               <p className="">
                 My skill set revolves around the following technologies, with a
-                continual expansion:
+                continual expansion
               </p>
             </div>
           </div>

@@ -1,17 +1,21 @@
 export default function Footer() {
   return (
-    <footer role="contentinfo" className="border-t py-6">
-      <p className="text-center">
-        <a
-          href="https://opensource.org/license/mit"
-          target="_blank"
-          className=""
-        >
-          {" "}
-          &copy; 2024 Dayan Walter - This project is licensed under the MIT
-          License.
-        </a>
-      </p>
+    // Container
+    <footer role="contentinfo" className="grid justify-center pt-40">
+      {/* Content */}
+      <div className="border-t p-4 md:max-w-7xl">
+        <p className="text-center">
+          <a
+            href="https://opensource.org/license/mit"
+            target="_blank"
+            className=""
+          >
+            {" "}
+            &copy; 2024 Dayan Walter - This project is licensed under the MIT
+            License.
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }

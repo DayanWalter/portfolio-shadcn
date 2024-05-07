@@ -9,10 +9,7 @@ export default function Intro() {
   return (
     <>
       {/* Section */}
-      <section
-        id="intro"
-        className="grid justify-center gap-16 py-20 md:pb-0 md:pt-24"
-      >
+      <section id="intro" className="grid justify-center py-20 md:py-24">
         {/* Container */}
         <div className="border-l px-4 md:max-w-7xl md:px-8">
           {/* Content */}
