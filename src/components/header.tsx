@@ -15,32 +15,32 @@ export default function Header() {
         </a>
 
         {/* Menu */}
-        <nav id="mainmenu" role="navigation" className="w-full md:w-3/4 ">
-          <div role="menubar" className="flex justify-between text-primary">
-            <Button variant="link">
-              <a href="#" role="menuitem">
+        <div id="mainmenu" className="w-full md:w-3/4 ">
+          <nav role="navigation" className="flex justify-between text-primary">
+            <Button variant="link" role="button">
+              <a href="#" role="link">
                 Home
               </a>
             </Button>
-            <Button variant="link">
-              <a href="#projects" role="menuitem">
+            <Button variant="link" role="button">
+              <a href="#projects" role="link">
                 Projects
               </a>
             </Button>
-            <Button variant="link">
-              <a href="#skills" role="menuitem">
+            <Button variant="link" role="button">
+              <a href="#skills" role="link">
                 Skills
               </a>
             </Button>
-            <Button variant="link">
-              <a href="#contact" role="menuitem">
+            <Button variant="link" role="button">
+              <a href="#contact" role="link">
                 Contact
               </a>
             </Button>
             {/* Themetoggle */}
             <ModeToggle />
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
   );

@@ -37,18 +37,22 @@ export default function Intro() {
               </p>
               {/* Links */}
               <div className="flex gap-3">
-                <Button size="icon">
-                  <a target="_blank" href={githubLink}>
+                <Button size="icon" role="button" aria-label="github button">
+                  <a target="_blank" href={githubLink} aria-label="github link">
                     <Github />
                   </a>
                 </Button>
-                <Button size="icon">
-                  <a target="_blank" href={linkedinLink}>
+                <Button size="icon" role="button" aria-label="linkedIn button">
+                  <a
+                    target="_blank"
+                    href={linkedinLink}
+                    aria-label="linkedin link"
+                  >
                     <Linkedin />
                   </a>
                 </Button>
-                <Button size="icon">
-                  <a href={`mailto:${email}`}>
+                <Button size="icon" role="button" aria-label="email button">
+                  <a href={`mailto:${email}`} aria-label="email link">
                     <Mail />
                   </a>
                 </Button>

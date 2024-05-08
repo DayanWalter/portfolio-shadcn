@@ -75,17 +75,18 @@ export default function Projects() {
                 key={project.id}
                 className="flex flex-col gap-5  md:flex-row md:gap-10"
               >
-                <a className="" target="_blank" href={project.websiteLink}>
+                <a target="_blank" href={project.websiteLink}>
                   <img
                     src={project.image}
                     className=" rounded-md border shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:max-w-lg "
+                    alt={project.title}
                   />
                 </a>
                 {/* Heading and text */}
                 <div className="flex flex-col gap-5">
                   {/* Heading and tech */}
                   <div className="">
-                    <a href={project.websiteLink}>
+                    <a href={project.websiteLink} aria-label="link to website">
                       <p className="text-xl font-semibold">{project.title}</p>
                     </a>
 
@@ -101,14 +102,18 @@ export default function Projects() {
                     <Button size="sm">
                       <a
                         href={project.codeLink}
-                        aria-label="View code for ..."
+                        aria-label="Link to code"
                         target="_blank"
                       >
                         View Code
                       </a>
                     </Button>
                     <Button size="sm">
-                      <a href={project.websiteLink} target="_blank">
+                      <a
+                        href={project.websiteLink}
+                        aria-label="Link to website"
+                        target="_blank"
+                      >
                         Visit website
                       </a>
                     </Button>
