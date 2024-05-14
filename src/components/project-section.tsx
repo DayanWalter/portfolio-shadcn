@@ -59,7 +59,11 @@ export default function Projects() {
                 key={project.id}
                 className="flex flex-col gap-5  md:flex-row md:gap-10"
               >
-                <a target="_blank" href={project.websiteLink}>
+                <a
+                  aria-label={`Link to ${project.title}`}
+                  target="_blank"
+                  href={project.websiteLink}
+                >
                   <video
                     className="w-max rounded-md border shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:max-w-xl "
                     autoPlay
