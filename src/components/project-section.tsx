@@ -8,14 +8,8 @@ export default function Projects() {
       video: "/landingpage.webm",
       title: "Landingpage",
       tech: "Vite, React, TypeScript, Tailwind CSS, Shadcn/ui",
-
-      descriptionDE:
-        "Eine vollständig reaktionsfähige Landingpage mit der Möglichkeit, das Farbthema zu ändern.",
       descriptionEN:
         "A fully responsive landing page with the option to change the color theme.",
-      descriptionES:
-        "Una página de destino completamente receptiva con la opción de cambiar el tema de color.",
-
       codeLink: "https://github.com/DayanWalter/landingpage-portfolio",
       websiteLink: "https://landingpage-five-flame.vercel.app/",
     },
@@ -25,14 +19,8 @@ export default function Projects() {
       video: "/satsch.webm",
       title: "SatSchool",
       tech: "React, Next.js, Tailwind CSS, Shadcn/ui, Node.js ",
-
-      descriptionDE:
-        "SatSchool ist eine E-Commerce-Plattform mit Stripe-Integration, die Kurse zu verschiedenen Bitcoin-Themen anbietet. Besonderes Augenmerk wird auf das Design und die Benutzerführung im Shop gelegt.",
       descriptionEN:
         "SatSchool is an e-commerce platform with Stripe integration, offering courses on various Bitcoin topics. Special attention is given to the design and user experience within the shop.",
-      descriptionES:
-        "SatSchool es una plataforma de comercio electrónico con integración de Stripe que ofrece cursos sobre diversos temas de Bitcoin. Se presta especial atención al diseño y la experiencia del usuario dentro de la tienda.",
-
       codeLink: "https://github.com/DayanWalter/satsch",
       websiteLink: "https://satschool.vercel.app/",
     },
@@ -42,14 +30,8 @@ export default function Projects() {
     //   image: "/bitfeather.webp",
     //   title: "BitFeather",
     //   tech: "React, Express.js, Node.js, MongoDB",
-
-    //   descriptionDE:
-    //     "BitFeather ist eine Social-Media-Plattform, die speziell für Bitcoin-Enthusiasten entwickelt wurde. Mit einem schlichten Design fördert sie unkomplizierte Verbindungen zwischen Gleichgesinnten.",
     //   descriptionEN:
     //     "BitFeather is a social media platform specifically designed for Bitcoin enthusiasts. With a simple design, it fosters straightforward connections among like-minded individuals.",
-    //   descriptionES:
-    //     "BitFeather es una plataforma de redes sociales diseñada específicamente para entusiastas de Bitcoin. Con un diseño sencillo, fomenta conexiones directas entre personas con intereses similares.",
-
     //   codeLink: "https://github.com/DayanWalter/bitfeather",
     //   websiteLink: "https://bitfeather.onrender.com/",
     // },
@@ -78,16 +60,17 @@ export default function Projects() {
                 className="flex flex-col gap-5  md:flex-row md:gap-10"
               >
                 <a target="_blank" href={project.websiteLink}>
-                  <img
-                    src={project.image}
-                    className=" rounded-md border shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:max-w-lg "
-                    alt={project.title}
-                  />
+                  <video
+                    className="w-max rounded-md border shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:max-w-xl "
+                    autoPlay
+                    muted
+                    loop
+                  >
+                    <source src={project.video} type="video/webm" />
+                    Dein Browser unterstützt das Video-Tag nicht.
+                  </video>
                 </a>
-                <video>
-                  <source src={project.video} type="video/webm" />
-                  Dein Browser unterstützt das Video-Tag nicht.
-                </video>
+
                 {/* Heading and text */}
                 <div className="flex flex-col gap-5">
                   {/* Heading and tech */}
