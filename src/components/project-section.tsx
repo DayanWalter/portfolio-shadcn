@@ -5,6 +5,7 @@ export default function Projects() {
     {
       id: "landingpage",
       image: "/landingpage.gif",
+      video: "/landingpage.webm",
       title: "Landingpage",
       tech: "Vite, React, TypeScript, Tailwind CSS, Shadcn/ui",
 
@@ -21,6 +22,7 @@ export default function Projects() {
     {
       id: "satsch",
       image: "/satsch.gif",
+      video: "/satsch.webm",
       title: "SatSchool",
       tech: "React, Next.js, Tailwind CSS, Shadcn/ui, Node.js ",
 
@@ -82,6 +84,10 @@ export default function Projects() {
                     alt={project.title}
                   />
                 </a>
+                <video>
+                  <source src={project.video} type="video/webm" />
+                  Dein Browser unterstützt das Video-Tag nicht.
+                </video>
                 {/* Heading and text */}
                 <div className="flex flex-col gap-5">
                   {/* Heading and tech */}
