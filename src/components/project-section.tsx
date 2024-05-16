@@ -21,7 +21,7 @@ export default function Projects() {
       tech: "React, Next.js, Tailwind CSS, Shadcn/ui, Node.js ",
       descriptionEN:
         "SatSchool is an e-commerce platform with Stripe integration, offering courses on various Bitcoin topics. Special attention is given to the design and user experience within the shop.",
-      codeLink: "https://github.com/DayanWalter/satsch",
+      codeLink: "https://github.com/DayanWalter/satschool",
       websiteLink: "https://satschool.vercel.app/",
     },
 
