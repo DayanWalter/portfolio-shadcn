@@ -9,13 +9,16 @@ export default function Intro() {
   return (
     <>
       {/* Section */}
-      <section id="intro" className="grid justify-center py-20 md:py-24">
+      <section
+        id="intro"
+        className="grid h-screen justify-center py-20 md:py-24"
+      >
         {/* Container */}
-        <div className="border-l px-4 md:max-w-7xl md:px-8">
+        <div className="0 border-l px-4 md:max-w-7xl md:px-8">
           {/* Content */}
           <div className="grid gap-8 md:gap-12">
             {/* Heading and supporting text */}
-            <div className="grid items-center justify-center gap-4 md:gap-6">
+            <div className="grid gap-6 md:gap-10">
               {/* Heading */}
               <h1 className="text-4xl font-semibold leading-10 md:text-6xl">
                 Amazing Apps, Clean Code.

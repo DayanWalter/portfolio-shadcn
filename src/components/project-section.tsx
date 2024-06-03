@@ -53,11 +53,11 @@ export default function Projects() {
           </div>
 
           {/* Content */}
-          <ul className="grid gap-20">
+          <ul className="grid gap-48">
             {projects.map((project) => (
               <li
                 key={project.id}
-                className="flex flex-col gap-5  md:flex-row md:gap-10"
+                className="flex flex-col gap-5 md:flex-row md:gap-10"
               >
                 <a
                   aria-label={`Link to ${project.title}`}
