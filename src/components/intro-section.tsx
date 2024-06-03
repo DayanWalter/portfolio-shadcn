@@ -18,7 +18,7 @@ export default function Intro() {
             <div className="grid items-center justify-center gap-4 md:gap-6">
               {/* Heading */}
               <h1 className="text-4xl font-semibold leading-10 md:text-6xl">
-                Welcome.
+                Amazing Apps, Clean Code.
               </h1>
               {/* Supporting text */}
               <p className="md:max-w-3xl md:text-xl">
@@ -27,13 +27,13 @@ export default function Intro() {
               </p>
 
               <p className="md:max-w-3xl md:text-xl">
-                Started with Lego, progressed to Redstone farms in Minecraft,
-                and ended up with functional React components - The play has
-                never stopped.
+                From Lego to Minecraft and now to functional React components –
+                the play has never stopped.
               </p>
               <p className="md:max-w-3xl md:text-xl">
-                I love developing efficient and modular solutions for complex
-                applications.
+                I develop efficient, modular solutions for complex applications,
+                combining creativity and precision to deliver outstanding
+                results.
               </p>
               {/* Links */}
               <div className="flex gap-3">
