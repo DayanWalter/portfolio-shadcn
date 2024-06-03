@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     // Container
-    <footer role="contentinfo" className="grid justify-center pt-20 md:pt-40">
+    <footer role="contentinfo" className="grid justify-center pt-40">
       {/* Content */}
       <div className="border-t p-4 md:max-w-7xl">
         <p className="text-center">
