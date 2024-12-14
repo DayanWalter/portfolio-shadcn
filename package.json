@@ -1,7 +1,10 @@
 {
-  "name": "portfolio_dayan_walter",
+  "name": "portfolio-dayan-walter",
   "private": true,
   "version": "2.0.0",
+  "author": "Dayan Walter",
+  "homepage": "https://dayanwalter.com",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

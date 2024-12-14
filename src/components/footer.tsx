@@ -11,8 +11,8 @@ export default function Footer() {
             className=""
           >
             {" "}
-            &copy; 2024 Dayan Walter - This project is licensed under the MIT
-            License.
+            &copy; {new Date().getFullYear()} Dayan Walter - This project is
+            licensed under the MIT License.
           </a>
         </p>
       </div>

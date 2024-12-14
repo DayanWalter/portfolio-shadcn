@@ -3,15 +3,15 @@ import { Button } from "./ui/button";
 export default function Projects() {
   const projects = [
     {
-      id: "landingpage",
-      image: "/landingpage.gif",
-      video: "/landingpage.webm",
-      title: "Landingpage",
-      tech: "Vite, React, TypeScript, Tailwind CSS, Shadcn/ui",
+      id: "easy-repair",
+      image: "/easy-repair.webp",
+      video: "/easy-repair.WEBM",
+      title: "Easy Repair",
+      tech: "Next.js, Tailwind CSS, Shadcn/ui, PostgreSQL",
       descriptionEN:
-        "A fully responsive landing page with the option to change the color theme.",
-      codeLink: "https://github.com/DayanWalter/landingpage-portfolio",
-      websiteLink: "https://landingpage-five-flame.vercel.app/",
+        "Easy Repair is a platform for managing repair requests. It allows employees to manage repair requests and track the progress of the repair.",
+      codeLink: "https://github.com/DayanWalter/easy-repair",
+      websiteLink: "https://easy-repair.vercel.app/",
     },
     {
       id: "satsch",
@@ -24,17 +24,17 @@ export default function Projects() {
       codeLink: "https://github.com/DayanWalter/satschool",
       websiteLink: "https://satschool.vercel.app/",
     },
-
-    // {
-    //   id: "bitfeather",
-    //   image: "/bitfeather.webp",
-    //   title: "BitFeather",
-    //   tech: "React, Express.js, Node.js, MongoDB",
-    //   descriptionEN:
-    //     "BitFeather is a social media platform specifically designed for Bitcoin enthusiasts. With a simple design, it fosters straightforward connections among like-minded individuals.",
-    //   codeLink: "https://github.com/DayanWalter/bitfeather",
-    //   websiteLink: "https://bitfeather.onrender.com/",
-    // },
+    {
+      id: "landingpage",
+      image: "/landingpage.gif",
+      video: "/landingpage.webm",
+      title: "Landingpage",
+      tech: "Vite, React, TypeScript, Tailwind CSS, Shadcn/ui",
+      descriptionEN:
+        "A fully responsive landing page with the option to change the color theme.",
+      codeLink: "https://github.com/DayanWalter/landingpage-portfolio",
+      websiteLink: "https://landingpage-five-flame.vercel.app/",
+    },
   ];
 
   return (
@@ -56,13 +56,13 @@ export default function Projects() {
           <ul className="grid gap-48">
             {projects.map((project) => (
               <li
-                key={project.id}
+                key={project?.id}
                 className="flex flex-col gap-5 md:flex-row md:gap-10"
               >
                 <a
-                  aria-label={`Link to ${project.title}`}
+                  aria-label={`Link to ${project?.title}`}
                   target="_blank"
-                  href={project.websiteLink}
+                  href={project?.websiteLink}
                 >
                   <video
                     className="w-max rounded-md border shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:max-w-xl "
@@ -70,7 +70,7 @@ export default function Projects() {
                     muted
                     loop
                   >
-                    <source src={project.video} type="video/webm" />
+                    <source src={project?.video} type="video/webm" />
                     Dein Browser unterstützt das Video-Tag nicht.
                   </video>
                 </a>
@@ -79,22 +79,22 @@ export default function Projects() {
                 <div className="flex flex-col gap-5">
                   {/* Heading and tech */}
                   <div className="">
-                    <a href={project.websiteLink} aria-label="link to website">
-                      <p className="text-xl font-semibold">{project.title}</p>
+                    <a href={project?.websiteLink} aria-label="link to website">
+                      <p className="text-xl font-semibold">{project?.title}</p>
                     </a>
 
                     {/* Tech */}
-                    <p className="text-sm italic">{project.tech}</p>
+                    <p className="text-sm italic">{project?.tech}</p>
                   </div>
 
                   {/* Description */}
-                  <p className="">{project.descriptionEN}</p>
+                  <p className="">{project?.descriptionEN}</p>
 
                   {/* Links */}
                   <div className="flex gap-5">
                     <Button size="sm">
                       <a
-                        href={project.codeLink}
+                        href={project?.codeLink}
                         aria-label="Link to code"
                         target="_blank"
                       >
@@ -103,7 +103,7 @@ export default function Projects() {
                     </Button>
                     <Button size="sm">
                       <a
-                        href={project.websiteLink}
+                        href={project?.websiteLink}
                         aria-label="Link to website"
                         target="_blank"
                       >
