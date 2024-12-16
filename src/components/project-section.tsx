@@ -1,42 +1,6 @@
 import { Button } from "./ui/button";
-
+import { PROJECTS } from "./constants";
 export default function Projects() {
-  const projects = [
-    {
-      id: "easy-repair",
-      image: "/easy-repair.webp",
-      video: "/easy-repair.WEBM",
-      title: "Easy Repair",
-      tech: "Next.js, Tailwind CSS, Shadcn/ui, PostgreSQL",
-      descriptionEN:
-        "Easy Repair is a platform for managing repair requests. It allows employees to manage repair requests and track the progress of the repair.",
-      codeLink: "https://github.com/DayanWalter/easy-repair",
-      websiteLink: "https://easy-repair.vercel.app/",
-    },
-    {
-      id: "satsch",
-      image: "/satsch.gif",
-      video: "/satsch.webm",
-      title: "SatSchool",
-      tech: "React, Next.js, Tailwind CSS, Shadcn/ui, Node.js ",
-      descriptionEN:
-        "SatSchool is an e-commerce platform with Stripe integration, offering courses on various Bitcoin topics. Special attention is given to the design and user experience within the shop.",
-      codeLink: "https://github.com/DayanWalter/satschool",
-      websiteLink: "https://satschool.vercel.app/",
-    },
-    {
-      id: "landingpage",
-      image: "/landingpage.gif",
-      video: "/landingpage.webm",
-      title: "Landingpage",
-      tech: "Vite, React, TypeScript, Tailwind CSS, Shadcn/ui",
-      descriptionEN:
-        "A fully responsive landing page with the option to change the color theme.",
-      codeLink: "https://github.com/DayanWalter/landingpage-portfolio",
-      websiteLink: "https://landingpage-five-flame.vercel.app/",
-    },
-  ];
-
   return (
     <>
       {/* Section */}
@@ -54,7 +18,7 @@ export default function Projects() {
 
           {/* Content */}
           <ul className="grid gap-48">
-            {projects.map((project) => (
+            {PROJECTS.map((project) => (
               <li
                 key={project?.id}
                 className="flex flex-col gap-5 md:flex-row md:gap-10"
@@ -71,7 +35,7 @@ export default function Projects() {
                     loop
                   >
                     <source src={project?.video} type="video/webm" />
-                    Dein Browser unterstützt das Video-Tag nicht.
+                    Your browser does not support the video tag.
                   </video>
                 </a>
 
