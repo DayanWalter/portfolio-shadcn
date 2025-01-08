@@ -26,7 +26,7 @@ export default function Intro() {
               {/* Supporting text */}
               <p className="md:max-w-3xl md:text-xl">
                 I am Dayan - father, husband and software developer specializing
-                in React.js, Express.js, MongoDB and Node.js.
+                in Next.js, React.js, Nest.js and PostgreSQL.
               </p>
 
               <p className="md:max-w-3xl md:text-xl">
