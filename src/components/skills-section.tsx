@@ -25,11 +25,11 @@ export default function Skills() {
               {/* FRONTEND  */}
               <section className="grid gap-5 ">
                 <p className="border-b text-center text-xl md:text-left">
-                  Frontend
+                  Frontend Technologies
                 </p>
                 <ul className="grid grid-cols-3 gap-5 md:grid-cols-7 ">
                   {SKILLS.find(
-                    (category) => category.category === "Frontend",
+                    (category) => category.category === "Frontend Technologies",
                   )?.skills.map((skill) => {
                     return (
                       <li key={skill.id}>
@@ -54,11 +54,11 @@ export default function Skills() {
               {/* BACKEND  */}
               <section className="grid gap-5">
                 <p className="border-b text-center text-xl md:text-left">
-                  Backend
+                  Backend & Databases
                 </p>
                 <ul className="grid grid-cols-3 gap-5 md:grid-cols-7 ">
                   {SKILLS.find(
-                    (category) => category.category === "Backend",
+                    (category) => category.category === "Backend & Databases",
                   )?.skills.map((skill) => {
                     return (
                       <li key={skill.id}>
@@ -112,11 +112,11 @@ export default function Skills() {
               {/* TOOLS */}
               <section className="grid gap-5">
                 <p className="border-b text-center text-xl md:text-left">
-                  Tools
+                  Development Tools
                 </p>
                 <ul className="grid grid-cols-3 gap-5 md:grid-cols-7 ">
                   {SKILLS.find(
-                    (category) => category.category === "Tools",
+                    (category) => category.category === "Development Tools",
                   )?.skills.map((skill) => {
                     return (
                       <li key={skill.id}>

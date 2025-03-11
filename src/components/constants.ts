@@ -13,7 +13,7 @@ type SkillCategory = {
 
 export const SKILLS: SkillCategory[] = [
   {
-    category: "Frontend",
+    category: "Frontend Technologies",
     skills: [
       {
         id: "html",
@@ -54,7 +54,7 @@ export const SKILLS: SkillCategory[] = [
     ],
   },
   {
-    category: "Backend",
+    category: "Backend & Databases",
     skills: [
       {
         id: "nodejs",
@@ -73,6 +73,12 @@ export const SKILLS: SkillCategory[] = [
         name: "Nest.js",
         website: "https://nestjs.com/",
         svg: "./nestjs.svg",
+      },
+      {
+        id: "graphql",
+        name: "GraphQL",
+        website: "https://graphql.org/",
+        svg: "./graphql.svg",
       },
       {
         id: "postgresql",
@@ -106,7 +112,7 @@ export const SKILLS: SkillCategory[] = [
     ],
   },
   {
-    category: "Tools",
+    category: "Development Tools",
     skills: [
       {
         id: "webpack",
